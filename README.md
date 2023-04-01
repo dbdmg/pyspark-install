@@ -7,9 +7,9 @@ This guide was created for the students of the "Distributed architectures for bi
 It will guide you on the installation of JupyterLab + PySpark.
 
 Three options are available to run your code locally:
- - Google Colab
- - Your own computer
- - LABINF's computer
+ - [Google Colab](#google-colab)
+ - [Your own computer](#local-installation)
+ - [LABINF's computer](#labinf-installation)
 
 
 ## Google Colab
