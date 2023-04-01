@@ -13,7 +13,8 @@ Three options are available to run your code locally:
 
 
 ## Google Colab
-** Requirement: you need a Google account to be able to use Google Colab. Internet connection is required to run the code. **
+**Requirement: you need a Google account to be able to use Google Colab. Internet connection is required to run the code.**
+
 This is the easiest solution and it does not require any configuration.
 
 ### Configuration
