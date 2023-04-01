@@ -62,7 +62,7 @@ Steps (after installation):
  ```
  - Install JupyterLab and PySpark
  ```
-    conda install jupyterlab pyspark
+    conda install -c conda-forge jupyterlab pyspark
  ```
 
 ### Open the JupyterLab web interface
