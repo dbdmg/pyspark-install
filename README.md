@@ -34,6 +34,8 @@ spark = SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 ```
 
+You can find an example here.
+
 ### Data upload
 To upload sample files on Google Colab, you can either:
  - upload files from your laptop
@@ -44,6 +46,53 @@ To upload sample files on Google Colab, you can either:
  ```
 
 ## Local Installation
+To locally install PySpark on your own computer, we suggest you to use Anaconda/Miniconda.
+If you do not have Miniconda installed on your system, you can find instructions and installers at this [link](https://docs.conda.io/en/latest/miniconda.html).
+Same can be performed using `pip` and `virtualenv`.
 
+Steps (after installation):
+ - (optional) Create a conda environment by opening a terminal (Anaconda/Miniconda terminal on Windows)
+ ```
+    conda create -n pyspark python=3.10
+ ```
+ - Activate the newly created environment
+ ```
+    conda activate pyspark
+ ```
+ - Install JupyterLab and PySpark
+ ```
+    conda install jupyterlab pyspark
+ ```
+
+### Open the JupyterLab web interface
+To open the JupyterLab web interface, you need to:
+ - open a terminal (Anaconda/Miniconda terminal on windows)
+ - go to the directory in which you want to start and save your notebook
+ ```
+    cd your_path
+ ```
+ - start JupyterLab
+ ```
+    conda activate pyspark
+    jupyter lab
+ ```
 
 ## LABINF Installation
+If you want to use LABINF's computer, you need to install PySpark locally.
+ - open a terminal (Anaconda terminal on windows)
+ - install pyspark
+ ```
+    pip install pyspark
+ ```
+
+Then, you can launch JupyterLab by the [Open the JupyterLab web interface](#Open-the-JupyterLab-web-interface) section.
+**One last additional step must be followed when running your application in LABINF:**
+the `PYSPARK_PYTHON` environment variable must be set. You can simply write the following code in the first cell and execute it:
+
+```
+    import os
+
+    os.environ['PYSPARK_PYTHON'] = 'C:\\tools\\Anaconda3\\python.exe'
+```
+
+You can find an example here.
