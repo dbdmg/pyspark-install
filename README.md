@@ -85,7 +85,7 @@ If you want to use LABINF's computer, you need to install PySpark locally.
     pip install pyspark
  ```
 
-Then, you can launch JupyterLab by the [Open the JupyterLab web interface](#Open-the-JupyterLab-web-interface) section, skipping the `conda activate` command.
+Then, you can launch JupyterLab by following the [Open the JupyterLab web interface](#Open-the-JupyterLab-web-interface) section, skipping the `conda activate` command.
 **One last additional step must be followed when running your application in LABINF:**
 the `PYSPARK_PYTHON` environment variable must be set. You can simply write the following code in the first cell and execute it:
 
