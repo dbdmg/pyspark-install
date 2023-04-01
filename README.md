@@ -34,7 +34,7 @@ spark = SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 ```
 
-You can find an example here.
+You can find an example [here](examples/colab_example.ipynb).
 
 ### Data upload
 To upload sample files on Google Colab, you can either:
@@ -95,4 +95,9 @@ the `PYSPARK_PYTHON` environment variable must be set. You can simply write the 
     os.environ['PYSPARK_PYTHON'] = 'C:\\tools\\Anaconda3\\python.exe'
 ```
 
-You can find an example here.
+You can find an example [here](examples/labinf_example.ipynb).
+
+# JupyterLab shutdown
+Always remember to shut down your jupyter server. You can do that by going into `File -> Shutdown` as shown here.
+
+![jupyterClose](images/jupyter_close.png)
