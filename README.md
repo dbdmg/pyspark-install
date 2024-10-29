@@ -1,5 +1,5 @@
 # PySpark Installation Guide
-This guide was created for the students of the "Distributed architectures for big data processing and analytics" course at Politecnico di Torino.
+This guide was created for the students of all the Big Data courses at Politecnico di Torino.
 **This guide must be used only in case you want to run your application without using the distributed cluster.**
 **On the distributed cluster, everything is already configured and ready to run Spark application.**
 **Please follow this guide only in case you want to execute applications on your own, without the distributed cluster.**
