@@ -78,6 +78,13 @@ To open the JupyterLab web interface, you need to:
     jupyter lab
  ```
 
+### (Optional) Python script execution
+If you prefer to develop your python application in a simple **python script**, copy these two lines of code at the very beginning of every python script.
+```
+import findspark
+findspark.init()
+```
+
 ## LABINF Installation
 If you want to use LABINF's computer, you need to install PySpark locally.
  - open a terminal (Anaconda terminal on windows)
