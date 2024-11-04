@@ -60,9 +60,9 @@ Steps (after installation):
  ```
     conda activate pyspark
  ```
- - Install JupyterLab and PySpark
+ - Install JupyterLab, findspark and PySpark
  ```
-    conda install -c conda-forge jupyterlab pyspark
+    conda install -c conda-forge jupyterlab pyspark findspark
  ```
 
 ### Open the JupyterLab web interface
