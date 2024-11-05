@@ -80,6 +80,7 @@ To open the JupyterLab web interface, you need to:
 
 ### (Optional) Python script execution
 If you prefer to develop your python application in a simple **python script**, copy these two lines of code at the very beginning of every python script.
+You can run the application by pressing on the "Run Python file" in top right corner of VSCode. 
 ```
 import findspark
 findspark.init()
