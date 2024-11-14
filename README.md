@@ -65,6 +65,9 @@ Steps (after installation):
     conda install -c conda-forge jupyterlab pyspark findspark
  ```
 
+Alternatively, if you do not have `conda` install on your system, you can use `pip` and `venv`.
+With `pip install pyspark` you are able to install pyspark in the activate environment.
+
 ### Open the JupyterLab web interface
 To open the JupyterLab web interface, you need to:
  - open a terminal (Anaconda/Miniconda terminal on windows)
