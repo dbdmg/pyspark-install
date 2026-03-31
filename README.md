@@ -22,17 +22,11 @@ This is the easiest solution and it does not require any configuration.
 Steps:
  - Go to the Colab's entry page ([link](https://colab.research.google.com/))
  - Create a new notebook
- - (optional) Verify that **no** Accellerator (GPU/TPU) is being used
+ - (optional) Verify that **no** Accelerator (GPU/TPU) is being used
     - Runtime -> Change runtime type -> Accelerator: None
  - Connect to a runtime by going into the top-right corner of the notebook and clicking `Connect`
  - After connection, Colab should report RAM and Disk usage
  - Install PySpark by running a cell with the following code: `!pip install pyspark`
- - Install and configure Java by running a cell with the following code:
-```
-import os
-!apt-get install openjdk-8-jdk-headless -qq > /dev/null
-os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64"
-```
    
  - Instantiate a SparkSession by running the following code in a cell:
 ```
