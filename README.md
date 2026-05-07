@@ -38,6 +38,21 @@ sc = spark.sparkContext
 
 You can find an example [here](examples/colab_example.ipynb).
 
+### GraphFrames Configuration
+- Install PySpark and GraphFrames by running a cell with the following code: : `!pip install -q pyspark==4.0.0 graphframes-py==0.11.0`
+- Instantiate a SparkSession with GraphFrames by running the following code in a cell:
+```
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+    .appName("GraphFramesPySpark4") \
+    .master("local[*]") \
+    .config("spark.jars.packages", "io.graphframes:graphframes-spark4_2.13:0.10.1") \
+    .getOrCreate()
+```
+
+You can find an example [here](examples/colab_graphframes_example.ipynb).
+
 ### Data upload
 To upload sample files on Google Colab, you can either:
  - upload files from your laptop
